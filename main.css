@@ -1,0 +1,456 @@
+body {
+    background-color: rgb(59, 59, 59);
+    /* background-image: url("swirl2sahrper.png"); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#spinner {
+    border: 16px dotted #f3f3f3; /* Light grey */
+    border-top: 16px dotted #464646; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+
+    /* Center the spinner */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Overlay the spinner above everything */
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#new-image-button {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    height: 30px;
+    color: white;
+    font-family: Minecraftia;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+#new-image-button2 {
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    height: 30px;
+    color: white;
+    font-family: Minecraftia;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+#generateImage {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    height: 30px;
+    color: white;
+    font-family: Minecraftia;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#counter {
+    position: absolute;
+    font-family: Minecraftia;
+    left: 140px; /* Adjust this value to move the counter horizontally */
+    top: 103px; /* Adjust this value to move the counter vertically */
+    z-index: 1;
+}
+
+#remainingRequests {
+    position: absolute;
+    font-family: Minecraftia;
+    left: 140px; /* Adjust this value to move the counter horizontally */
+    top: 203px; /* Adjust this value to move the counter vertically */
+    z-index: 1;
+}
+
+
+#new-video-button {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    height: 30px;
+    color: white;
+    font-family: Minecraftia;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+#new-video-button2 {
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    height: 30px;
+    color: white;
+    font-family: Minecraftia;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Change this to the desired background color */
+    z-index: 1; /* This ensures the header stays on top of other elements */
+    border-bottom-left-radius: 10px; /* Round the bottom left corner */
+    border-bottom-right-radius: 10px; /* Round the bottom right corner */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(32, 32, 32);
+    border-bottom-left-radius: 2px; /* Round the bottom left corner */
+    border-bottom-right-radius: 2px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: left;
+}
+
+#fontSelect {
+    position: absolute;
+    left: 20px;
+    top: 75px;
+    width: 129px;
+    height: 25px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#colorDisplay{
+    position: absolute;
+    left: 20px;
+    top: 126.5px;
+    height: 25px;
+    border-radius: 5px;
+    z-index: 1;
+    outline: rgb(118, 118, 118) solid 1px;
+}
+
+#fontColorSelect option[value="black"] { color: black; }
+#fontColorSelect option[value="crimson"] { color: crimson; }
+#fontColorSelect option[value="red"] { color: red; }
+#fontColorSelect option[value="blue"] { color: blue; }
+#fontColorSelect option[value="green"] { color: green; }
+#fontColorSelect option[value="yellow"] { color: yellow; }
+#fontColorSelect option[value="orange"] { color: orange; }
+#fontColorSelect option[value="purple"] { color: purple; }
+#fontColorSelect option[value="pink"] { color: pink; }
+#fontColorSelect option[value="white"] { color: white; }
+#fontColorSelect option[value="gray"] { color: gray; }
+#fontColorSelect option[value="brown"] { color: brown; }
+#fontColorSelect option[value="cyan"] { color: cyan; }
+#fontColorSelect option[value="lime"] { color: lime; }
+#fontColorSelect option[value="magenta"] { color: magenta; }
+#fontColorSelect option[value="olive"] { color: olive; }
+#fontColorSelect option[value="teal"] { color: teal; }
+#fontColorSelect option[value="navy"] { color: navy; }
+#fontColorSelect option[value="maroon"] { color: maroon; }
+#fontColorSelect option[value="silver"] { color: silver; }
+#fontColorSelect option[value="gold"] { color: gold; }
+#fontColorSelect option[value="indigo"] { color: indigo; }
+#fontColorSelect option[value="violet"] { color: violet; }
+#fontColorSelect option[value="turquoise"] { color: turquoise; }
+#fontColorSelect option[value="tan"] { color: tan; }
+#fontColorSelect option[value="beige"] { color: beige; }
+#fontColorSelect option[value="azure"] { color: azure; }
+#fontColorSelect option[value="lavender"] { color: lavender; }
+
+
+#fontSelect option[value="Arial"] {
+    font-family: Arial;
+}
+
+#fontSelect option[value="Comic Sans MS"] {
+    font-family: 'Comic Sans MS';
+}
+
+#fontSelect option[value="Courier Sans Mono"] {
+    font-family: 'Courier Sans Mono';
+}
+
+#fontSelect option[value="Courier New"] {
+    font-family: 'Courier New';
+}
+
+#fontSelect option[value="Courier Prime"] {
+    font-family: 'Courier Prime';
+}
+#fontSelect option[value="Minecraftia"] {
+    font-family: 'Minecraftia';
+}
+#fontSelect option[value="Times New Roman"] {
+    font-family: 'Times New Roman';
+}
+#fontSelect option[value="Verdana"] {
+    font-family: 'Verdana';
+}
+
+/* add more rules as needed */
+
+
+
+
+#fontSizeSelect {
+    position: absolute;
+    left: 20px;
+    top: 175px;
+    height: 25px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#animationToggle {
+    position: absolute;
+    left: 20px;
+    top: 650px;
+    height: 25px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#fontColorSelect {
+    position: absolute;
+    left: 50px;
+    top: 125px;
+    height: 25px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#boldCheckbox {
+    position: absolute;
+    left: 40px;
+    z-index: 1;
+}
+
+#italicCheckbox {
+    position: absolute;
+    left: 40px;
+    z-index: 1;
+}
+
+#boldLabel {
+    position: absolute;
+    left: 22px;
+    top: 225px;
+    z-index: 1;
+}
+
+#italicLabel {
+    position: absolute;
+    left: 22px;
+    top: 250px;
+    z-index: 1;
+}
+
+#enterTextButton {
+    position: absolute;
+    right: 20px;
+    top: 600px;
+    height: 30px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#fetchQuoteButton {
+    position: absolute;
+    right: 20px;
+    top: 550px;
+    height: 30px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#clearButton {
+    position: absolute;
+    right: 20px;
+    top: 650px;
+    height: 30px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+#resizeButton {
+    position: absolute;
+    right: 20px;
+    top: 750px;
+    height: 30px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#resizeButtonSqu {
+    position: absolute;
+    right: 20px;
+    top: 700px;
+    height: 30px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#toggleOptions {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    color: white;
+    height: 30px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#userInput {
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    font-size: 20px;
+    width: 1250px;
+    height: 750px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+
+    border-radius: 20px;
+
+
+    animation-timing-function: ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes blackGlow {
+    0% {box-shadow: 0px 0px 100px 20px black;}
+    20% {box-shadow: 10px 10px 100px 20px black;}
+    50% {box-shadow: 0px 0px 100px 20px black;}
+    75% {box-shadow: -10px -10px 100px 20px black;}
+    100% {box-shadow: 0px 0px 100px 20px black;}
+}
+
+@keyframes rainbow {
+    0% {box-shadow:
+        100px -100px 450px 20px red,
+        100px 0px 450px 20px orange,
+        100px 100px 450px 20px yellow,
+        0px 100px 450px 20px green,
+        -100px 100px 450px 20px blue,
+        -100px 0px 450px 20px indigo,
+        -100px -100px 450px 20px violet;}
+    14% {box-shadow:
+        100px 0px 450px 20px red,
+        100px 100px 450px 20px orange,
+        0px 100px 450px 20px yellow,
+        -100px 100px 450px 20px green,
+        -100px 0px 450px 20px blue,
+        -100px -100px 450px 20px indigo,
+        100px -100px 450px 20px violet;}
+    28% {box-shadow:
+        100px 100px 450px 20px red,
+        0px 100px 450px 20px orange,
+        -100px 100px 450px 20px yellow,
+        -100px 0px 450px 20px green,
+        -100px -100px 450px 20px blue,
+        100px -100px 450px 20px indigo,
+        100px 0px 450px 20px violet;}
+    42% {box-shadow:
+        0px 100px 450px 20px red,
+        -100px 100px 450px 20px orange,
+        -100px 0px 450px 20px yellow,
+        -100px -100px 450px 20px green,
+        100px -100px 450px 20px blue,
+        100px 0px 450px 20px indigo,
+        100px 100px 450px 20px violet;}
+    57% {box-shadow:
+        -100px 100px 450px 20px red,
+        -100px 0px 450px 20px orange,
+        -100px -100px 450px 20px yellow,
+        100px -100px 450px 20px green,
+        100px 0px 450px 20px blue,
+        100px 100px 450px 20px indigo,
+        0px 100px 450px 20px violet;}
+    71% {box-shadow:
+        -100px 0px 450px 20px red,
+        -100px -100px 450px 20px orange,
+        100px -100px 450px 20px yellow,
+        100px 0px 450px 20px green,
+        100px 100px 450px 20px blue,
+        0px 100px 450px 20px indigo,
+        -100px 100px 450px 20px violet;}
+    85% {box-shadow:
+        -100px -100px 450px 20px red,
+        100px -100px 450px 20px orange,
+        100px 0px 450px 20px yellow,
+        100px 100px 450px 20px green,
+        0px 100px 450px 20px blue,
+        -100px 100px 450px 20px indigo,
+        -100px 0px 450px 20px violet;}
+    100% {box-shadow:
+        100px -100px 450px 20px red,
+        100px 0px 450px 20px orange,
+        100px 100px 450px 20px yellow,
+        0px 100px 450px 20px green,
+        -100px 100px 450px 20px blue,
+        -100px 0px 450px 20px indigo,
+        -100px -100px 450px 20px violet;}
+}
+
+
+
+

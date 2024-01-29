@@ -14,6 +14,9 @@ fetch('https://pixabay.com/api/?key=42080867-039d5b144c63ec32d11cde8a4&orientati
         var randomIndex = Math.floor(Math.random() * data.hits.length);
         var img = document.createElement('img');
         img.src = data.hits[randomIndex].largeImageURL; // Access the image URL
+
+        
+
         img.onload = function() {
             if (this.naturalHeight - 150 > window.innerHeight) {
                 img.style.marginTop = '60px';

@@ -226,7 +226,108 @@ nav ul li a {
 #fontSelect option[value="Verdana"] {
     font-family: 'Verdana';
 }
+#fontSelect option[value="Georgia"] {
+    font-family: 'Georgia';
+}
 
+#fontSelect option[value="Palatino Linotype"] {
+    font-family: 'Palatino Linotype';
+}
+
+#fontSelect option[value="Book Antiqua"] {
+    font-family: 'Book Antiqua';
+}
+
+#fontSelect option[value="Helvetica"] {
+    font-family: 'Helvetica';
+}
+
+#fontSelect option[value="Garamond"] {
+    font-family: 'Garamond';
+}
+
+#fontSelect option[value="Lucida Sans Unicode"] {
+    font-family: 'Lucida Sans Unicode';
+}
+
+#fontSelect option[value="Tahoma"] {
+    font-family: 'Tahoma';
+}
+
+#fontSelect option[value="Trebuchet MS"] {
+    font-family: 'Trebuchet MS';
+}
+
+#fontSelect option[value="Arial Black"] {
+    font-family: 'Arial Black';
+}
+
+#fontSelect option[value="Impact"] {
+    font-family: 'Impact';
+}
+
+#fontSelect option[value="Lucida Console"] {
+    font-family: 'Lucida Console';
+}
+
+#fontSelect option[value="Monaco"] {
+    font-family: 'Monaco';
+}
+
+#fontSelect option[value="5x5"] {
+    font-family: '5x5';
+}
+
+#fontSelect option[value="American Typewriter"] {
+    font-family: 'American Typewriter';
+}
+
+#fontSelect option[value="Andale Mono"] {
+    font-family: 'Andale Mono';
+}
+
+#fontSelect option[value="Big Caslon"] {
+    font-family: 'Big Caslon';
+}
+
+#fontSelect option[value="Bodoni MT"] {
+    font-family: 'Bodoni MT';
+}
+
+#fontSelect option[value="Brush Script MT"] {
+    font-family: 'Brush Script MT';
+}
+
+#fontSelect option[value="Chalkduster"] {
+    font-family: 'Chalkduster';
+}
+
+#fontSelect option[value="Copperplate"] {
+    font-family: 'Copperplate';
+}
+
+#fontSelect option[value="Papyrus"] {
+    font-family: 'Papyrus';
+}
+
+#fontSelect option[value="Wide Latin"] {
+    font-family: 'Wide Latin';
+}
+#fontSelect option[value="Comfortaa"] {
+    font-family: 'Comfortaa', cursive;
+}
+
+#fontSelect option[value="Roboto"] {
+    font-family: 'Roboto', sans-serif;
+}
+
+#fontSelect option[value="Open Sans"] {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#fontSelect option[value="Lato"] {
+    font-family: 'Lato', sans-serif;
+}
 /* add more rules as needed */
 
 
@@ -451,6 +552,20 @@ nav ul li a {
         -100px -100px 450px 20px violet;}
 }
 
+section {
+    padding: 20px; /* Add some padding around the links */
+    margin: 20px; /* Add some margin around the section */
+}
 
+section a {
+    display: block; /* Display each link on a new line */
+    color: white; /* Change the color of the links */
+    text-decoration: none; /* Remove the underline from the links */
+    margin-bottom: 10px; /* Add some space between the links */
+}
+
+section a:hover {
+    color: #007BFF; /* Change the color of the links when you hover over them */
+}
 
 
